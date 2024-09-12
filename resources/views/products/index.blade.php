@@ -44,7 +44,7 @@
                 @endif
             </td>
             <td>
-                <a href="{{ url('product/'.$item->id.'/edit') }} "class="btn btn-success mx-2">Edit</a>
+                <a href="{{ url('products/'.$item->id.'/edit') }} "class="btn btn-success mx-2">Edit</a>
                 <a href=""class="btn btn-danger mx-2">Delete</a>
             </td>
         </tr>

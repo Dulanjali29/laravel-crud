@@ -31,22 +31,27 @@
                         <div class="mb-2">
                             <label>Name</label>
                             <input type="text" name="name" class="form-control" value="{{ $products->name}}"/>
+                            @error('name') <span class="text-danger">{{ $message}}</span> @enderror
                         </div>
                         <div class="mb-2">
                             <label>Description</label>
                             <input type="text" name="description" class="form-control" value="{{ $products->description}}"/>
+                            @error('name') <span class="text-danger">{{ $message}}</span> @enderror
                         </div>
                         <div class="mb-2">
                             <label>Price</label>
                             <input type="text" name="price" class="form-control" value="{{  $products->price}}"/>
+                            @error('price') <span class="text-danger">{{ $message}}</span> @enderror
                         </div>
                         <div class="mb-2">
                             <label>QTY</label>
                             <input type="number" name="qty" class="form-control" value="{{ $products->qty}}"/>
+                            @error('qty') <span class="text-danger">{{ $message}}</span> @enderror
                         </div>
                         <div class="mb-2">
                             <label>Is Active</label>
                             <input type="checkbox" name="is_active" {{$products->is_active == true ? 'checked':''}}/>
+                            @error('is_active') <span class="text-danger">{{ $message}}</span> @enderror
                         </div>
                         <div class="mb-2">
 

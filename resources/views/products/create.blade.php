@@ -44,7 +44,7 @@
                             <input type="number" name="qty" class="form-control" value="{{ old('qty') }}"/>
                         </div>
                         <div class="mb-2">
-                            <label>IsActive</label>
+                            <label>Is Active</label>
                             <input type="checkbox" name="is_active" {{ old('is_active')==true ? checked:''}}/>
                         </div>
                         <div class="mb-2">

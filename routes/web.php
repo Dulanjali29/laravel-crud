@@ -9,3 +9,4 @@ Route::get('/', function () {
 Route::get('/products',[ProductsController::class,'index']);
 Route::get('/products/create',[ProductsController::class,'create']);
 Route::post('/products/create',[ProductsController::class,'store']);
+Route::get('/products/{id}/edit',[ProductsController::class,'edit']);

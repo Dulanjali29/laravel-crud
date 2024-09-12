@@ -65,4 +65,11 @@ class ProductsController extends Controller
             ]);
             return redirect()->back()->with('status','Product Updated');
     }
+
+    public function destroy(int $id)
+    {
+    $products=Products::findOrFail($id);
+    $products->delete();
+    return redirect()->back()->with('status','Product Updated');
+    }
 }

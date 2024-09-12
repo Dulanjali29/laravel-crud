@@ -11,8 +11,8 @@
 <div class="col-md-12">
  <div class="card">
     <div class="card-header">
-        <h4> Item Manage
-            <a href="{{ url('/products/create') }}" class="btn btn-primary float-end">Add Item</a>
+        <h4> Item Add
+            <a href="{{ url ('/products') }}" class="btn btn-primary float-end">Back</a>
         </h4>
     </div>
     <div class="card-body">

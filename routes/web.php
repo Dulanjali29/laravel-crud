@@ -7,3 +7,4 @@ Route::get('/', function () {
     return view('products.index');
 });
 Route::get('/products',[ProductsController::class,'index']);
+Route::get('/products/create',[ProductsController::class,'create ']);

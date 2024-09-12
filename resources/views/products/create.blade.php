@@ -12,6 +12,12 @@
 <body>
     <div class="container mt-5">
         <div class="col-md-12">
+
+            @if(session('status'))
+            <div class ="alert alert-success">{{ session('status') }}</div>
+            @endsession
+
+
             <div class="card">
                 <div class="card-header">
                     <h4> Item Add
@@ -19,7 +25,7 @@
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{ 'products/create'}}" method="POST">
+                    <form action="{{'/products/create'}}" method="POST">
                         @csrf
                         <div class="mb-2">
                             <label>Name</label>

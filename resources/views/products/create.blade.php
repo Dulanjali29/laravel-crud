@@ -48,7 +48,7 @@
                             @error('qty') <span class="text-danger">{{ $message}}</span> @enderror
                         </div>
                         <div class="mb-2">
-                            <label>Is Active</label>
+                            <label>Available</label>
                             <input type="checkbox" name="is_active" {{ old('is_active')==true ? checked:''}}/>
                             @error('is_active') <span class="text-danger">{{ $message}}</span> @enderror
                         </div>

@@ -29,6 +29,7 @@
         </tr>
     </thead>
     <tbody>
+
         @foreach ($products as $item)
         <tr>
             <td>{{ $item->id }}</td>
@@ -46,7 +47,7 @@
             <td>
                 <a href="{{ url('products/'.$item->id.'/edit') }} "class="btn btn-success mx-2">Edit</a>
                 <a href="{{ url('products/'.$item->id.'/delete') }}"class="btn btn-danger mx-2">Delete</a>
-                <a href="{{ url('products/'.$item->id.'/view') }}"class="btn btn-info mx-2">View</a>
+                <a href="{{ url('products/'.$item->id.'/show') }}"class="btn btn-info mx-2">View</a>
             </td>
         </tr>
         @endforeach

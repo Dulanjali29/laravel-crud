@@ -9,7 +9,7 @@ class ProductsController extends Controller
 {
     public function index()
     {
-        $products=Products::get();
+        $products =Products::get();
 
         return view('products.index',compact('products'));
     }
@@ -71,5 +71,11 @@ class ProductsController extends Controller
     $products=Products::findOrFail($id);
     $products->delete();
     return redirect()->back()->with('status','Product Updated');
+    }
+
+    public function show( $id)
+    {
+        $products = Products::findOrFail($id);
+        return view('products.show',compact('products'));
     }
 }
